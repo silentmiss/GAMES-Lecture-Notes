@@ -11,10 +11,14 @@
             "id": "6fd379424eafa665",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Lecture 1.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Lecture 1"
             }
           }
         ]
@@ -58,16 +62,6 @@
               },
               "icon": "lucide-search",
               "title": "搜索"
-            }
-          },
-          {
-            "id": "b992711c0b228efb",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "书签"
             }
           }
         ]
@@ -116,46 +110,18 @@
             }
           },
           {
-            "id": "8bafe8bda024439d",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "标签"
-            }
-          },
-          {
-            "id": "0737c1b661b3ac7d",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
-            }
-          },
-          {
             "id": "a4efd815388d5e7f",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Lecture 1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "Lecture 1 的大纲"
             }
           },
           {
@@ -169,11 +135,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 308.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,6 +153,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6fd379424eafa665",
-  "lastOpenFiles": []
+  "active": "2d89ebaa09964891",
+  "lastOpenFiles": [
+    "Lecture 3.md",
+    "Lecture 4.md",
+    "未命名.base",
+    "未命名 1.base",
+    "Lecture 1.md",
+    "Lecture 2.md"
+  ]
 }
