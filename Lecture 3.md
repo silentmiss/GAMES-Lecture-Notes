@@ -101,14 +101,12 @@ y_i^2+z_i^2 & -x_iy_i & -x_iz_i \\
 ### 具体解释过程
 
 旋转矩阵一共有9个数（3×3 矩阵）：
-$$
-R =  
+$$R =  
 \begin{bmatrix}  
 r_{11} & r_{12} & r_{13}\\  
 r_{21} & r_{22} & r_{23}\\  
 r_{31} & r_{32} & r_{33}  
-\end{bmatrix}  
-$$
+\end{bmatrix}$$
 
 但三维旋转实际只有3个自由度（不论是什么表示方式）
 
@@ -120,21 +118,17 @@ $$
 
 约束条件：
 （1）每列单位长度
-$$
-\begin{align}
+$$\begin{align}
 r_{11}^2 + r_{21}^2 + r_{31}^2 = 1\\
 r_{12}^2 + r_{22}^2 + r_{32}^2 = 1\\
 r_{13}^2 + r_{23}^2 + r_{33}^2 = 1
-\end{align}
-$$
+\end{align}$$
 （2）列之间正交
-$$
-\begin{align}
+$$\begin{align}
 r_{11}r_{12}+r_{21}r_{22}+r_{31}r_{32}=0\\
 r_{11}r_{13}+r_{21}r_{23}+r_{31}r_{33}=0\\
 r_{12}r_{13}+r_{22}r_{23}+r_{32}r_{33}=0
-\end{align}
-$$
+\end{align}$$
 （3）行列式 = 1
 共有 $7$ 个约束，但其中一个约束不是独立的（数学上可证明），因此最终独立约束是 $6$ 个
 所以自由度是 $9 - 6 = 3$ 个，这就是三维旋转的本质维度。
@@ -152,32 +146,26 @@ $$
 #### 补充知识：三个基本旋转矩阵
 
 - 绕 Z 轴（yaw）
-$$
-R_z(\psi) =  
+$$R_z(\psi) =  
 \begin{bmatrix}  
 \cos\psi & -\sin\psi & 0 \\  
 \sin\psi & \cos\psi & 0 \\  
 0 & 0 & 1  
-\end{bmatrix}  
-$$
+\end{bmatrix}$$
 - 绕 Y 轴（pitch）
-$$
-R_y(\theta) =  
+$$R_y(\theta) =  
 \begin{bmatrix}  
 \cos\theta & 0 & \sin\theta \\  
 0 & 1 & 0 \\  
 -\sin\theta & 0 & \cos\theta  
-\end{bmatrix}  
-$$
+\end{bmatrix}$$
 - 绕 X 轴（roll）
-$$
-R_x(\phi) =  
+$$R_x(\phi) =  
 \begin{bmatrix}  
 1 & 0 & 0 \\  
 0 & \cos\phi & -\sin\phi \\  
 0 & \sin\phi & \cos\phi  
-\end{bmatrix}  
-$$
+\end{bmatrix}$$
 
 ### 静态欧拉角
 
