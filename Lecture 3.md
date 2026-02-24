@@ -75,15 +75,12 @@ $$\tau = \sum \tau_i$$
 
 转动惯量（Moment of Inertia）
 - 【参考状态——物体坐标系】： 
-
-$$
-I_{\text{ref}} = \sum m_i (r_i^{\top} r_i \mathbf{1} - r_i r_i^{\top}) 
+$$I_{\text{ref}} = \sum m_i (r_i^{\top} r_i \mathbf{1} - r_i r_i^{\top}) 
 = \sum_i m_i \begin{bmatrix} 
 y_i^2+z_i^2 & -x_iy_i & -x_iz_i \\ 
 -x_iy_i & x_i^2+z_i^2 & -y_iz_i \\ 
 -x_iz_i & -y_iz_i & x_i^2+y_i^2 
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 - 【世界坐标系】： 
   $$I = R I_{\text{ref}} R^{\top}$$
