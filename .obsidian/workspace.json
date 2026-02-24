@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Lecture 1.md",
+                "file": "Lecture 4.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 1"
+              "title": "Lecture 4"
             }
           }
         ]
@@ -94,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Lecture 1.md",
+                "file": "Lecture 4.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Lecture 1 的大纲"
+              "title": "Lecture 4 的大纲"
             }
           },
           {
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Lecture 1.md",
+                "file": "Lecture 4.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +119,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Lecture 1 的反向链接列表"
+              "title": "Lecture 4 的反向链接列表"
             }
           },
           {
@@ -128,12 +128,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Lecture 1.md",
+                "file": "Lecture 4.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Lecture 1 的出链列表"
+              "title": "Lecture 4 的出链列表"
             }
           },
           {
@@ -165,13 +165,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2d89ebaa09964891",
+  "active": "6fd379424eafa665",
   "lastOpenFiles": [
-    "Lecture 4.md",
-    "Lecture 1.md",
     "Lecture 3.md",
+    "images/impulse_method.png",
+    "images/Rigid.md",
+    "Lecture 2.md",
+    "Lecture 1.md",
+    "Lecture 4.md",
     "未命名.base",
-    "未命名 1.base",
-    "Lecture 2.md"
+    "未命名 1.base"
   ]
 }

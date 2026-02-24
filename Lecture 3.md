@@ -7,7 +7,7 @@
 
 刚体（Rigid Body）模拟 → 随时间通过模拟器更新状态量 $s^{[i]}$
 
-![[images/Rigid Body Simulation.png]]
+![Rigid_Body_Simulation.png](images/Rigid_Body_Simulation.png)
 
 ---
 
@@ -86,7 +86,7 @@ $$
 - $f_i$：外力
 - $R$：旋转矩阵
 
-四元数 $q = (w, x, y, z)$ 与旋转矩阵的转换：![[images/四元数与旋转矩阵的转换.png]]
+四元数 $q = (w, x, y, z)$ 与旋转矩阵的转换：![四元数与旋转矩阵的转换.png](四元数与旋转矩阵的转换.png)
 
 
 ## 冗余性
@@ -268,4 +268,4 @@ $$
 然后计算：$$v' = q v q^{-1}$$
 ### 四元数的计算
 
-![[images/四元数的计算.png]]
+![四元数的计算.png](images/四元数的计算.png)

@@ -27,7 +27,7 @@
 
 ## Impulse Method
 
-![[images/impulse method.png]]
+![images/impulse_method.png](images/impulse_method.png)
 
 与 penalty method 的区别在于：penalty method 在检测到碰撞之后会产生一个力但不会立刻执行，需要等到下一个时刻；impulse method 则会立刻执行
 
@@ -90,11 +90,11 @@ $$
 
 ### ① 点的运动
 
-![[images/Shape Matching.png]]
+![Shape_Matching.png](images/Shape_Matching.png)
 
 ### ② 点的约束
 
-![[images/点的约束.png]]
+![点的约束.png](images/点的约束.png)
 目的：$$y_i \rightarrow x_i = c + R r_i$$
 将问题转换成求解未知数 $c$ 和 $R$：$$\{c, R\} = \text{argmin} \sum_i \frac{1}{2} || c + R r_i - y_i ||^2$$ 因为这里 $R$ 实际上可以通过扩大问题替换成任意矩阵，因此可以简化成下面的形式：$$\{c, A\} = \text{argmin} \sum_i \frac{1}{2} || c + A r_i - y_i ||^2 = \text{argmin} \sum_i E \text{（目标 Objective）}$$
 通过计算偏微分能够得到下面的算式：
