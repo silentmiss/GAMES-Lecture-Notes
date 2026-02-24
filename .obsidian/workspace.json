@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GAMES103-基于物理的计算机动画入门/Lecture 1.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 1"
+              "title": "README"
             }
           }
         ],
@@ -209,8 +209,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "34a3bef728ad309e",
+  "active": "56561dc31c43474b",
   "lastOpenFiles": [
+    "GAMES103-基于物理的计算机动画入门/Lecture 1.md",
     "GAMES101/images/齐次坐标 透视投影变换 乘数z的解释.png",
     "GAMES101/images/view transformation（矩阵推导）.jpg",
     "GAMES101/images/perspective projection 矩阵推导.jpg",
@@ -221,7 +222,6 @@
     "GAMES101/GAMES101（2024笔记）.pdf",
     "GAMES101",
     "GAMES103-基于物理的计算机动画入门/Lecture 2.md",
-    "GAMES103-基于物理的计算机动画入门/Lecture 1.md",
     "README.md",
     "GAMES103-基于物理的计算机动画入门",
     "GAMES103-基于物理的计算机动画入门/Lecture 4.md",
