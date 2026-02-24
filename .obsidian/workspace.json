@@ -63,6 +63,16 @@
               "icon": "lucide-search",
               "title": "搜索"
             }
+          },
+          {
+            "id": "0ae1429862b1db43",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
           }
         ]
       }
@@ -79,37 +89,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "00f77ee0bacdf9be",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "反向链接"
-            }
-          },
-          {
-            "id": "8f94609bef0bce85",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "出链"
-            }
-          },
-          {
             "id": "a4efd815388d5e7f",
             "type": "leaf",
             "state": {
@@ -122,6 +101,39 @@
               },
               "icon": "lucide-list",
               "title": "Lecture 1 的大纲"
+            }
+          },
+          {
+            "id": "00f77ee0bacdf9be",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Lecture 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Lecture 1 的反向链接列表"
+            }
+          },
+          {
+            "id": "8f94609bef0bce85",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Lecture 1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Lecture 1 的出链列表"
             }
           },
           {
@@ -155,11 +167,11 @@
   },
   "active": "2d89ebaa09964891",
   "lastOpenFiles": [
-    "Lecture 3.md",
     "Lecture 4.md",
+    "Lecture 1.md",
+    "Lecture 3.md",
     "未命名.base",
     "未命名 1.base",
-    "Lecture 1.md",
     "Lecture 2.md"
   ]
 }
