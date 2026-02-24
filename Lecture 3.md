@@ -68,10 +68,13 @@ $$
 - 四元数（Quaternion）
 	- 优点：冗余小，不存在万向锁的问题
 
-力矩（Torque）： $$\tau_i = R r_i \times f_i$$
-总力矩： $$\tau = \sum \tau_i$$
+力矩（Torque）： 
+$$\tau_i = R r_i \times f_i$$
+总力矩： 
+$$\tau = \sum \tau_i$$
+
 转动惯量（Moment of Inertia）
-- 【参考状态——物体坐标系】：
+- 【参考状态——物体坐标系】： 
 $$
 I_{\text{ref}} = \sum m_i (r_i^{\top} r_i \mathbf{1} - r_i r_i^{\top}) 
 = \sum_i m_i \begin{bmatrix} 
@@ -80,7 +83,9 @@ y_i^2+z_i^2 & -x_iy_i & -x_iz_i \\
 -x_iz_i & -y_iz_i & x_i^2+y_i^2 
 \end{bmatrix}
 $$
-- 【世界坐标系】： $$I = R I_{\text{ref}} R^{\top}$$
+- 【世界坐标系】： 
+  $$I = R I_{\text{ref}} R^{\top}$$
+
 参数说明：
 - $r_i = (x_i, y_i, z_i)$：力作用点相对于质心的位置向量
 - $f_i$：外力
