@@ -261,3 +261,43 @@ $$
 ### 四元数的计算
 
 ![四元数的计算.png](GAMES103-基于物理的计算机动画入门/images/四元数的计算.png)
+
+## 四元数的叉积计算
+
+通常，两个向量 $\mathbf{a}$ 和 $\mathbf{b}$ 的叉积是：
+$$
+\mathbf{a} \times \mathbf{b} = (a_yb_z - a_zb_y,\; a_zb_x - a_xb_z,\; a_xb_y - a_yb_x)
+$$
+但我们可以把它改写成**矩阵乘以向量**的形式：
+$$
+\mathbf{a} \times \mathbf{b} = [\mathbf{a}]_{\times} \mathbf{b}
+$$
+其中 $[\mathbf{a}]_{\times}$ 就是代码中构造的**斜对称矩阵**（Skew-Symmetric Matrix）。
+
+对于向量 $\mathbf{a} = (a_x, a_y, a_z)$，其**叉积矩阵**为：
+
+$$
+[\mathbf{a}]_{\times} = \begin{bmatrix} 
+0 & -a_z & a_y \\ 
+a_z & 0 & -a_x \\ 
+-a_y & a_x & 0 
+\end{bmatrix}
+$$
+验证：
+
+$$
+\begin{bmatrix} 
+0 & -a_z & a_y \\ 
+a_z & 0 & -a_x \\ 
+-a_y & a_x & 0 
+\end{bmatrix} 
+\begin{bmatrix} b_x \\ b_y \\ b_z \end{bmatrix} 
+= 
+\begin{bmatrix} 
+-a_z b_y + a_y b_z \\ 
+a_z b_x - a_x b_z \\ 
+-a_y b_x + a_x b_y 
+\end{bmatrix} 
+= 
+\mathbf{a} \times \mathbf{b}
+$$

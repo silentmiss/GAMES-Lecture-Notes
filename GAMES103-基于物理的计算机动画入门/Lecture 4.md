@@ -31,6 +31,8 @@
 
 与 penalty method 的区别在于：penalty method 在检测到碰撞之后会产生一个力但不会立刻执行，需要等到下一个时刻；impulse method 则会立刻执行
 
+第 $i$ 个顶点在世界坐标系中的位置 = 质心在世界坐标系中的位置 + 旋转矩阵 x 顶点在局部坐标系中的位置 $$x_i \leftarrow x + R r_i$$
+
 位置更新：
 $$\phi(x) < 0 \longrightarrow \text{collision: } x^{\text{new}} \leftarrow x + |\phi(x)| N = x - \phi(x) \nabla \phi(x)$$
 
@@ -76,7 +78,7 @@ $$
 
 > 补充：
 > 问题：由于对于物体来说永远有重力的作用，因此可能会因为一直产生重力方向的冲量从而发生抖动（Oscillation）
-> 解决方法：在物体开始精致下来的时候可以尝试减小 $\mu_\text{N}$ 来减小抖动
+> 解决方法：在物体开始静止下来的时候可以尝试减小 $\mu_\text{N}$ 来减小抖动
 
 ---
 
@@ -143,42 +145,6 @@ $$\phi(x) = \min(\phi_1(x), \phi_2(x)) = \begin{cases} > 0 & \text{outside} \\ \
 
 ## 四元数的叉积计算
 
-通常，两个向量 $\mathbf{a}$ 和 $\mathbf{b}$ 的叉积是：
-$$
-\mathbf{a} \times \mathbf{b} = (a_yb_z - a_zb_y,\; a_zb_x - a_xb_z,\; a_xb_y - a_yb_x)
-$$
-但我们可以把它改写成**矩阵乘以向量**的形式：
-$$
-\mathbf{a} \times \mathbf{b} = [\mathbf{a}]_{\times} \mathbf{b}
-$$
-其中 $[\mathbf{a}]_{\times}$ 就是代码中构造的**斜对称矩阵**（Skew-Symmetric Matrix）。
-
-对于向量 $\mathbf{a} = (a_x, a_y, a_z)$，其**叉积矩阵**为：
-
-$$
-[\mathbf{a}]_{\times} = \begin{bmatrix} 
-0 & -a_z & a_y \\ 
-a_z & 0 & -a_x \\ 
--a_y & a_x & 0 
-\end{bmatrix}
-$$
-验证：
-
-$$
-\begin{bmatrix} 
-0 & -a_z & a_y \\ 
-a_z & 0 & -a_x \\ 
--a_y & a_x & 0 
-\end{bmatrix} 
-\begin{bmatrix} b_x \\ b_y \\ b_z \end{bmatrix} 
-= 
-\begin{bmatrix} 
--a_z b_y + a_y b_z \\ 
-a_z b_x - a_x b_z \\ 
--a_y b_x + a_x b_y 
-\end{bmatrix} 
-= 
-\mathbf{a} \times \mathbf{b}
-$$
+![](GAMES103-基于物理的计算机动画入门/images/matrix%20product.png)
 
 # FIN
