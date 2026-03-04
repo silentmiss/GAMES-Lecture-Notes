@@ -7,7 +7,7 @@
 	- 基于图形学的方法——shape matching
 ```
 
-# 基于优化的方法
+# 基于力的方法
 
 虽然 Impulse Method 能够更加精确地控制反弹和摩擦，但是真实世界的机制其实更接近 Penalty Method 
 ## Quadratic Penalty Method
@@ -46,8 +46,9 @@ $$
 \end{align}
 $$
 - $\mu_\text{N}$：反弹系数，为了符合能量守恒定律，取值范围为 $[0, 1]$ 
+- $\mu_T$：摩擦系数
 - $a$：需要保证尽量小的同时满足库仑定律（Coulomb's law）
-  $$\begin{align} & || v_\text{T}^\text{new} - v_\text{T} || \leq \mu_\text{N} || v_\text{N}^\text{new} - v_\text{N} || \\ \Rightarrow & a \leftarrow \max(\frac{1 - \mu_\text{T}(1 + \mu_\text{N}) || v_\text{N} ||}{|| v_\text{T} ||}, 0) = \max(\text{dynamic friction}, \text{static friction})\end{align}$$
+  $$\begin{align} & || v_\text{T}^\text{new} - v_\text{T} || \leq \mu_\text{T} || v_\text{N}^\text{new} - v_\text{N} || \\ \Rightarrow & a \leftarrow \max(\frac{1 - \mu_\text{T}(1 + \mu_\text{N}) || v_\text{N} ||}{|| v_\text{T} ||}, 0) = \max(\text{dynamic friction}, \text{static friction})\end{align}$$
 
 但是实际情况中仅设置了 4 个变量（质心的位置、质心的速度、旋转轴的姿势、旋转的角速度），因此无法直接更新 $x_i$ 和 $v_i$，所以可以通过修改 $\omega$ 和 $v$ 这一较为容易的方法进行更新
 $$
@@ -147,4 +148,16 @@ $$\phi(x) = \min(\phi_1(x), \phi_2(x)) = \begin{cases} > 0 & \text{outside} \\ \
 
 ![](GAMES103-基于物理的计算机动画入门/images/matrix%20product.png)
 
+## Unity中的MeshFilter和MeshRenderer
+
+作业中的 `Rigid_Bunny.cs` 只动 Transform，不动 mesh，因此只需要用到 `MeshFilter`——只读 `mesh.vertices` 算惯性、碰撞等，**从不写 `mesh.vertices`**；运动全靠 **`transform.position`** 和 **`transform.rotation`**，顶点一直在**模型局部空间**里不变。
+
+而 `Rigid_Bunny_by_Shape_Matching.cs` 每帧都会改顶点，并把 Transform 归零——
+- 每帧 **`mesh.vertices = X`**，顶点被改成**世界空间**位置。
+- **`transform.position = Vector3.zero`、`transform.rotation = Quaternion.identity`**，物体的「位置」完全由顶点坐标表示。
+渲染：mesh 每帧在变，且 Transform 固定为 0，**唯一能把这只兔子画出来的就是同一个物体上的 MeshRenderer**。如果关掉或没有 MeshRenderer，就不会有任何东西被画出来，所以**必须开启/挂上 MeshRenderer** 才能看到效果。
+
+# 作业小结
+
+第一种方法的问题是容易发生抖动，需要在一些情况下对于参数进行调整；第二种方法观察的时候感觉容易出现滑动的问题，原因不明
 # FIN

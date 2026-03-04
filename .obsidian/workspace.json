@@ -8,49 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6fd379424eafa665",
+            "id": "8b2ff9fb4efa0184",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GAMES103-基于物理的计算机动画入门/Lecture 3.md",
+                "file": "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 3"
-            }
-          },
-          {
-            "id": "56561dc31c43474b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GAMES103-基于物理的计算机动画入门/Lecture 4.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lecture 4"
-            }
-          },
-          {
-            "id": "23c08b9b94e31bc0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "README"
+              "title": "Lecture 5"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -123,13 +94,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "Lecture 5 的大纲"
             }
           },
           {
@@ -225,6 +196,15 @@
   },
   "active": "2d89ebaa09964891",
   "lastOpenFiles": [
+    "GAMES103-基于物理的计算机动画入门/images/Triangle Mesh Representation.png",
+    "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
+    "GAMES103-基于物理的计算机动画入门/images/Unstructured Spring Networks.png",
+    "GAMES103-基于物理的计算机动画入门/images/Structured Spring Networks.png",
+    "GAMES103-基于物理的计算机动画入门/images/Multiple Springs.png",
+    "GAMES103-基于物理的计算机动画入门/images/Ideal Spring.png",
+    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$05_cloth.pptx",
+    "GAMES103-基于物理的计算机动画入门/Lecture 4.md",
+    "README.md",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/README.assets/image-20220222115356463.png",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/README.assets",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/After-class reading list.docx",
@@ -235,25 +215,19 @@
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/08_FEM_new.pptx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/07_collision.pptx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/06_constraints.pptx",
-    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/05_cloth.pptx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/README.md",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/Outline.md",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/GAMES103-main/README.assets/image-20220222115356463.png",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/GAMES103-main/README.md",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/GAMES103-main/Outline.md",
-    "GAMES103-基于物理的计算机动画入门/Lecture 4.md",
     "GAMES103-基于物理的计算机动画入门/Lecture 3.md",
     "GAMES103-基于物理的计算机动画入门/images/matrix product.png",
     "GAMES103-基于物理的计算机动画入门/Lecture 1.md",
-    "README.md",
     "GAMES101/images/齐次坐标 透视投影变换 乘数z的解释.png",
     "GAMES101/images/view transformation（矩阵推导）.jpg",
-    "GAMES101/images/perspective projection 矩阵推导.jpg",
-    "GAMES101/images/orthographic projection 矩阵推导.jpg",
     "GAMES101/Lecture 04 Transformation Cont..md",
     "GAMES101/Lecture 03 Transformation.md",
     "GAMES103-基于物理的计算机动画入门/Lecture 2.md",
-    "GAMES103-基于物理的计算机动画入门/images/impulse_method.png",
     "images/Rigid.md"
   ]
 }
