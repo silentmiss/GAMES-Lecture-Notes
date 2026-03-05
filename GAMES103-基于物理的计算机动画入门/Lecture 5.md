@@ -10,10 +10,14 @@ Implicit Integration：Newton Method & Jacobi Method
 
 # 建模
 
+## Structured Spring Networks
+
 对于较为规则的情况，将布料看作是方形网格，节点之间通过弹簧连接从而进行约束。
 约束方式除了横向与纵向，还有对角线上的限制以及跨越节点的限制。
 将网格之间的约束进行简化，可以减少一些对角线以及节点之间的约束，但是需要注意对角线上的约束不能够只有一个方向的以免出现偏向性。
 ![](GAMES103-基于物理的计算机动画入门/images/Structured%20Spring%20Networks.png)
+
+## Unstructured Spring Networks
 
 对于不太规则的情况，可以将不了看作是三角形，同样通过弹簧来连接节点从而起到约束的作用。
 弹簧除了连接三角形本来的边，还可以连接原先没有连接的节点。
