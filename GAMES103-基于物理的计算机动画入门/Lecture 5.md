@@ -8,6 +8,8 @@ Explicit Integration → 问题
 Implicit Integration：Newton Method & Jacobi Method
 ```
 
+# 建模
+
 对于较为规则的情况，将布料看作是方形网格，节点之间通过弹簧连接从而进行约束。
 约束方式除了横向与纵向，还有对角线上的限制以及跨越节点的限制。
 将网格之间的约束进行简化，可以减少一些对角线以及节点之间的约束，但是需要注意对角线上的约束不能够只有一个方向的以免出现偏向性。
@@ -18,6 +20,38 @@ Implicit Integration：Newton Method & Jacobi Method
 ![](GAMES103-基于物理的计算机动画入门/images/Unstructured%20Spring%20Networks.png)
 但是如何判断哪些节点之间需要新的连接相较于方形网格的情况更为复杂。
 
+在 [Triangle Mesh Representation](#Triangle%20Mesh%20Representation) 的基础上，构造新的 triple 列表用于存储一条边的两个顶点和相对应的三角形的编号，然后对于新列表进行排序，如此得到的新列表中重复的边就会排序在一起，由此便可以轻易删除重复的节点然后得到已有的边的信息，于是就能够得到能够添加的新 bending 的列表。
+![](GAMES103-基于物理的计算机动画入门/images/Topological%20Contruction.png)
+
+---
+# 计算
+
+## Explicit Integration
+
+计算流程：首先得到弹簧的两个节点，通过当前时刻的弹簧长度计算分别对于两个节点的力，然后通过粒子系统的方式进行速度与位置的更新
+![](GAMES103-基于物理的计算机动画入门/images/Explicit%20Integration.png)
+
+问题：该种计算方式容易产生数值不稳定（Numerical Instability）的问题——当 $k$ 或 $\Delta t$ 过大的时候，会出现 overshooting 的现象。
+
+## Implicit Integration
+
+![](GAMES103-基于物理的计算机动画入门/images/Implicit%20Integration.png)
+对于 $\mathbf{f}^{[1]}$，我们假设其只与位置有关，不依赖于其他变量（holonomic）。
+
+因此我们能够将上述 $\mathbf{x}^{[1]}$ 的计算转换成等价的求某函数最小值的系数的问题：
+![](GAMES103-基于物理的计算机动画入门/images/问题转化.png)
+
+### Newton-Raphson Method
+
+![](GAMES103-基于物理的计算机动画入门/images/Newton-Raphson%20Method.png)
+此处一个重要的计算就是
+$$\frac{\partial F^2 (\mathbf{x}^{(k)})}{\partial \mathbf{x}^2} = \frac{1}{\Delta t^2} \mathbf{M} + \mathbf{H}(\mathbf{x}^{(k)})$$
+其中牵涉到前面课程提及的 Hessian 知识点。
+
+
+### Jacobi Method
+
+---
 
 # 补充知识
 
@@ -30,3 +64,5 @@ Implicit Integration：Newton Method & Jacobi Method
 ## Triangle Mesh Representation
 
 ![](GAMES103-基于物理的计算机动画入门/images/Triangle%20Mesh%20Representation.png)
+在电脑中，三角形通过上面图片的方式进行存储，一个列表用于存储节点的位置，一个聊表用于存储三角形三条边的索引。
+
