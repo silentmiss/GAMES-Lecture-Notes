@@ -37,6 +37,7 @@ Implicit Integration：Newton Method & Jacobi Method
 
 ![](GAMES103-基于物理的计算机动画入门/images/Implicit%20Integration.png)
 对于 $\mathbf{f}^{[1]}$，我们假设其只与位置有关，不依赖于其他变量（holonomic）。
+注：其中 $\mathbf{M} \in \mathbb{R}^{3N \times 3N}$ 。
 
 因此我们能够将上述 $\mathbf{x}^{[1]}$ 的计算转换成等价的求某函数最小值的系数的问题：
 ![](GAMES103-基于物理的计算机动画入门/images/问题转化.png)
@@ -47,9 +48,42 @@ Implicit Integration：Newton Method & Jacobi Method
 此处一个重要的计算就是
 $$\frac{\partial F^2 (\mathbf{x}^{(k)})}{\partial \mathbf{x}^2} = \frac{1}{\Delta t^2} \mathbf{M} + \mathbf{H}(\mathbf{x}^{(k)})$$
 其中牵涉到前面课程提及的 Hessian 知识点。
-
+$$
+\mathbf{H}(\mathbf{x}) 
+= \sum_{e={i,j}} 
+\begin{bmatrix} \square & \square & \square & \square \\ \square & \frac{\partial^2 E}{\partial \mathbf{x}_i^2} & \frac{\partial^2 E}{\partial \mathbf{x}_i \partial \mathbf{x}_j} & \square \\ \square & \frac{\partial^2 E}{\partial \mathbf{x}_i \partial \mathbf{x}_j} & \frac{\partial^2 E}{\partial \mathbf{x}_j^2} & \square \\ \square & \square & \square & \square \end{bmatrix} 
+= \sum_{e={i,j}} 
+\begin{bmatrix} \square & \square & \square & \square \\ \square & \mathbf{H}_e & -\mathbf{H}_e & \square \\ \square & -\mathbf{H}_e & \mathbf{H}_e & \square \\ \square & \square & \square & \square \end{bmatrix}
+$$
+$$
+\mathbf{H}_e 
+= k \frac{\mathbf{x}_{ij}\mathbf{x}_{ij}^{\text{T}}}{||\mathbf{x}_{ii}||^2} 
++ k\left(1 - \frac{L}{||\mathbf{x}_{ij}||}\right)
+\left(\mathbf{I} - \frac{\mathbf{x}_{ij}\mathbf{x}_{ij}^{\text{T}}}{||\mathbf{x}_{ii}||^2}\right)
+$$
+- $k \frac{\mathbf{x}_{ij}\mathbf{x}_{ij}^{\text{T}}}{||\mathbf{x}_{ii}||^2}$：半正定（s.p.d.）
+- $\left(1 - \frac{L}{||\mathbf{x}_{ij}||}\right)$：若 $|\mathbf{x}_{ij}| < L_e$ 则为负
+- $\left(\mathbf{I} - \frac{\mathbf{x}_{ij}\mathbf{x}_{ij}^{\text{T}}}{||\mathbf{x}_{ii}||^2}\right)$：半正定（s.p.d.）
+这是因为对于任意 $\mathbf{x}_{ij}, \mathbf{v} \neq \mathbf{0}$，
+$$ \mathbf{v}^{\text{T}} \frac{\mathbf{x}_{ij}\mathbf{x}_{ij}^{\text{T}}}{||\mathbf{x}_{ij}||^2} \mathbf{v} = \left|\left| \frac{\mathbf{x}_{ij}^{\text{T}} \mathbf{v}}{||\mathbf{x}_{ij}||} \right|\right|^2 > 0 $$
+$$ \mathbf{v}^{\text{T}} \left( \mathbf{I} - \frac{\mathbf{x}_{ij}\mathbf{x}_{ij}^{\text{T}}}{||\mathbf{x}_{ij}||^2} \right) \mathbf{v} = \frac{||\mathbf{x}_{ij}||^2 ||\mathbf{v}||^2 - ||\mathbf{x}_{ij}^{\text{T}} \mathbf{v}||^2}{||\mathbf{x}_{ij}||^2} > 0 $$
+因此可以注意到，当弹簧拉伸的时候，Hessian 矩阵是正定的，但是当弹簧收缩的时候 Hessian 矩阵的正定性就无法确定了——这一点可以体现在现实中我们想要压缩弹簧的时候，弹簧有可能会向两端弯折，而这种弯折的方向是不确定的，正好对应了 Hessian 矩阵无法确定的正定性。
+![](GAMES103-基于物理的计算机动画入门/images/Positive%20Definiteness%20of%20Hessian.png)
+对于上述 Hessian 矩阵的正定性的问题，有一种解决方法是在 Hessian 矩阵不是正定的时候直接去掉其后半部分从而使其保持正定。
 
 ### Jacobi Method
+
+![](GAMES103-基于物理的计算机动画入门/images/Jacobi%20Method.png)
+$\alpha$的重要性：标准雅可比方法（α = 1）要求矩阵 A 必须“对角占优”（即对角线元素远大于其他元素），否则可能不收敛；引入 $α$ 后，即使 A 只是“正定矩阵”（一种更宽松的条件），只要选择合适的 $α$，算法也能收敛，这大大扩展了雅可比方法的适用范围。
+
+#### 使用 Chebyshev 进行加速
+
+![](GAMES103-基于物理的计算机动画入门/images/The%20Jacobi%20Method%20with%20Chebyshev%20Acceleration.png)
+
+### 对比两种方法
+
+Direct Method：对于矩阵的要求少，大多数情况都能够使用，求解精确；计算逻辑复杂很难在GPU上并行化加速，而且计算量大
+Jacobi Method：要求矩阵性质好（正定），求解不够精确；计算快捷且代码简单清晰
 
 ---
 

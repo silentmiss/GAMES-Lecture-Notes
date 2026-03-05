@@ -34,22 +34,9 @@
               "icon": "lucide-file",
               "title": "Lecture 5"
             }
-          },
-          {
-            "id": "052dcefe5ae29125",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "草稿本.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "草稿本"
-            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,13 +109,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GAMES103-基于物理的计算机动画入门/Lecture 2.md",
+                "file": "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Lecture 2 的大纲"
+              "title": "Lecture 5 的大纲"
             }
           },
           {
@@ -225,10 +212,14 @@
   "active": "2d89ebaa09964891",
   "lastOpenFiles": [
     "草稿本.md",
-    "GAMES103-基于物理的计算机动画入门/Lecture 2.md",
     "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
-    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$02_math.pptx",
+    "GAMES103-基于物理的计算机动画入门/images/The Jacobi Method with Chebyshev Acceleration.png",
+    "GAMES103-基于物理的计算机动画入门/images/Jacobi Method.png",
+    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/ppt36B1.tmp",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$05_cloth.pptx",
+    "GAMES103-基于物理的计算机动画入门/Lecture 2.md",
+    "GAMES103-基于物理的计算机动画入门/images/Positive Definiteness of Hessian.png",
+    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$02_math.pptx",
     "GAMES103-基于物理的计算机动画入门/images/2nd-Order Derivatives（1D）.png",
     "GAMES103-基于物理的计算机动画入门/images/1st-Order Derivatives（3D）.png",
     "GAMES103-基于物理的计算机动画入门/images/1st-Order Derivatives（1D）.png",
@@ -236,11 +227,8 @@
     "GAMES103-基于物理的计算机动画入门/images/Scaling.png",
     "GAMES103-基于物理的计算机动画入门/images/Particle-triangle Intersection.png",
     "GAMES103-基于物理的计算机动画入门/images/Barycentric - Tetrahedron.png",
-    "GAMES103-基于物理的计算机动画入门/images/Tetrahedral Volume.png",
-    "GAMES103-基于物理的计算机动画入门/images/Barycentric - Triangle.png",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/ppt27B6.tmp",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/pptC3E.tmp",
-    "GAMES103-基于物理的计算机动画入门/images/Triangle Inside.png",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$01_intro.pptx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$03_rigid.pptx",
     "GAMES103-基于物理的计算机动画入门/Lecture 4.md",
@@ -248,7 +236,6 @@
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/README.assets",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/After-class reading list.docx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/12_SPH.pptx",
-    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/11_Eulerian_fluids.pptx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/README.md",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/Outline.md",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/GAMES103-main/README.md",
