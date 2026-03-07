@@ -4,35 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "9a7e23568262b898",
+        "id": "84f6af8ab4917e02",
         "type": "tabs",
         "children": [
           {
-            "id": "8b2ff9fb4efa0184",
+            "id": "5740f26ba9fa05f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GAMES103-基于物理的计算机动画入门/Lecture 2.md",
+                "file": "GAMES103-基于物理的计算机动画入门/Lecture 6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 2"
+              "title": "Lecture 6"
             }
           },
           {
-            "id": "dcc5b1fd63acb519",
+            "id": "ed731e5b03e08407",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
+                "file": "GAMES103-基于物理的计算机动画入门/Lecture 7.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture 5"
+              "title": "Lecture 7"
+            }
+          },
+          {
+            "id": "b4627328d947a10f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "草稿本.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "草稿本"
             }
           }
         ],
@@ -109,13 +123,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
+                "file": "GAMES103-基于物理的计算机动画入门/Lecture 7.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Lecture 5 的大纲"
+              "title": "Lecture 7 的大纲"
             }
           },
           {
@@ -211,31 +225,35 @@
   },
   "active": "2d89ebaa09964891",
   "lastOpenFiles": [
+    "GAMES103-基于物理的计算机动画入门/images/Strain Energy Density Funciton -- Force 推导过程3.png",
+    "GAMES103-基于物理的计算机动画入门/images/Strain Energy Density Funciton -- Force 推导过程2.png",
+    "GAMES103-基于物理的计算机动画入门/images/Strain Energy Density Funciton -- Force 推导过程1.png",
+    "GAMES103-基于物理的计算机动画入门/images/Strain Energy Density Function -- Force.png",
+    "GAMES103-基于物理的计算机动画入门/images/Strain Energy Density Function.png",
+    "GAMES103-基于物理的计算机动画入门/images/Linear Finit Element Method.png",
+    "GAMES103-基于物理的计算机动画入门/images/FEM 求解 F 2.png",
+    "GAMES103-基于物理的计算机动画入门/Lecture 7.md",
+    "GAMES103-基于物理的计算机动画入门/images/FEM 求解 F 1.png",
+    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$08_FEM_new.pptx",
+    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$07_collision.pptx",
+    "GAMES103-基于物理的计算机动画入门/images/Stable Constrained Dynamics.png",
+    "GAMES103-基于物理的计算机动画入门/images/Constrained Dynamics 公式2.png",
+    "GAMES103-基于物理的计算机动画入门/images/二面角模型（力的大小）.png",
+    "GAMES103-基于物理的计算机动画入门/images/README.md",
     "草稿本.md",
-    "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
-    "GAMES103-基于物理的计算机动画入门/images/The Jacobi Method with Chebyshev Acceleration.png",
-    "GAMES103-基于物理的计算机动画入门/images/Jacobi Method.png",
-    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/ppt36B1.tmp",
+    "GAMES103-基于物理的计算机动画入门/Lecture 6.md",
+    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$06_constraints.pptx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$05_cloth.pptx",
+    "GAMES103-基于物理的计算机动画入门/Lecture 5.md",
+    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/ppt36B1.tmp",
     "GAMES103-基于物理的计算机动画入门/Lecture 2.md",
-    "GAMES103-基于物理的计算机动画入门/images/Positive Definiteness of Hessian.png",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$02_math.pptx",
-    "GAMES103-基于物理的计算机动画入门/images/2nd-Order Derivatives（1D）.png",
-    "GAMES103-基于物理的计算机动画入门/images/1st-Order Derivatives（3D）.png",
-    "GAMES103-基于物理的计算机动画入门/images/1st-Order Derivatives（1D）.png",
-    "GAMES103-基于物理的计算机动画入门/images/Rotation.png",
-    "GAMES103-基于物理的计算机动画入门/images/Scaling.png",
-    "GAMES103-基于物理的计算机动画入门/images/Particle-triangle Intersection.png",
-    "GAMES103-基于物理的计算机动画入门/images/Barycentric - Tetrahedron.png",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/ppt27B6.tmp",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/pptC3E.tmp",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$01_intro.pptx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/~$03_rigid.pptx",
     "GAMES103-基于物理的计算机动画入门/Lecture 4.md",
     "README.md",
-    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/README.assets",
-    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/After-class reading list.docx",
-    "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/PPT/12_SPH.pptx",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/README.md",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/Outline.md",
     "GAMES103-基于物理的计算机动画入门/documents/GAMES103-main/GAMES103-main/README.md",
